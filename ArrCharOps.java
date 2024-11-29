@@ -113,7 +113,7 @@ public class ArrCharOps {
      */     
     public static char[] subArray(char[] arr, int beginIndex, int endIndex) {
         // Replace the following statement with your code
-        char[]newArr = new char[endIndex-beginIndex + 1];
+        char[]newArr = new char[endIndex-beginIndex];
         int newIndex = 0;
         for (int i = beginIndex; i < endIndex; i++) {
             newArr[newIndex] = arr[i];
@@ -133,7 +133,7 @@ public class ArrCharOps {
         // Replace the following statement with your code
         long hashCode = 0;
         for (int i = 0; i < arr.length; i++) {
-            hashCode += arr[0]*(Math.pow(7, arr.length - (i+1)));
+            hashCode += arr[i]*(Math.pow(7, arr.length - (i+1)));
         }
         return hashCode;
     }
@@ -165,8 +165,6 @@ public class ArrCharOps {
      */
     public static int compareTo(String str1, String str2) {
         // Replace the following statement with your code
-        str1 = str1.toLowerCase();
-        str2 = str2.toLowerCase();
         for (int i = 0; i < Math.min(str1.length(), str2.length()); i++) {
             //declare both here so we dont have to keep calculating them.
             char currentCh1 = str1.charAt(i);
