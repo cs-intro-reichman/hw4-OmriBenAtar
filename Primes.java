@@ -30,6 +30,6 @@ public class Primes {
                 System.out.println(i);
             }
         }
-        System.out.println("There are " + count + " primes between 2 and " + ceil + " (" + (count/ceil) + "% are primes)");
+        System.out.println("There are " + count + " primes between 2 and " + ceil + " (" + ((count)* 100/ceil) + "% are primes)");
     }
 }
