@@ -113,9 +113,11 @@ public class ArrCharOps {
      */     
     public static char[] subArray(char[] arr, int beginIndex, int endIndex) {
         // Replace the following statement with your code
-        char[]newArr = new char[endIndex-beginIndex];
+        char[]newArr = new char[endIndex-beginIndex + 1];
+        int newIndex = 0;
         for (int i = beginIndex; i < endIndex; i++) {
-            newArr[i] = arr[i];
+            newArr[newIndex] = arr[i];
+            newIndex++;
         }
         return newArr;
     }
