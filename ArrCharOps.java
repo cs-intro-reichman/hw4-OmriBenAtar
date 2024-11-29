@@ -173,7 +173,7 @@ public class ArrCharOps {
                 return -2;
             if(currentCh1 < currentCh2)
                 return -1;
-            if(currentCh2 > currentCh1)
+            if(currentCh2 < currentCh1)
                 return 1;
         }
         if(str1.length() == str2.length())
