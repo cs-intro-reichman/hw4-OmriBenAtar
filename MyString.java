@@ -36,6 +36,9 @@ public class MyString {
     public static boolean contains(String str1, String str2) {
         // Replace the following statement with your code
         boolean flag = true;
+        //check for empty contain
+        if(str2.length() < 1)
+            return true;
         if(str2.length() < 1)
             return false;
         for (int i = 0; i < (str1.length() - str2.length()) + 1; i++) {
